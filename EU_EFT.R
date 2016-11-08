@@ -1,7 +1,7 @@
 # Natura 2000 Analysis, spatial panel data and mapping #
 # author: nils.droste@ufz.de #
 
-setwd("C:/Users/droste/Dropbox/Dokumente/doctorate/fiscal transfers/EFT-EU/data")
+setwd("C:/Users/droste/.../EFT-EU/data")
 
 # data -------------------------------------------------------------------
 # raw
@@ -221,7 +221,7 @@ setwd("C:/Users/droste/Dropbox/Dokumente/doctorate/fiscal transfers/EFT-EU/data"
     rm(list = ls())
 
 # mapping --------------------------------------------------------------------
-setwd("C:/Users/droste/Dropbox/Dokumente/doctorate/fiscal transfers/EFT-EU/data/")
+setwd("C:/Users/droste/.../fiscal transfers/EFT-EU/data/")
 spatialpanel <- read.csv("spatialpanel.csv")    
 par(mfrow=c(1,1))
 #loading spatial data
@@ -428,7 +428,7 @@ par(mfrow=c(1,1))
   length(levels(s.df.sub$NUTS_ID))
   
 #   pairs(s.df)
-#   source("C:/Users/droste/Dropbox/Dokumente/doctorate/R/scripts/panel_cor.R")
+#   source("C:/Users/droste/.../R/scripts/panel_cor.R")
 #   pairs(natura2000~area+pop+GDPcap+tour+unemp, data=s.df, upper.panel = panel.cor, lower.panel=panel.smooth)
 #   pairs(log(natura2000)~log(area)+log(pop)+log(GDPcap)+log(tour)+log(unemp), data=s.df, upper.panel = panel.cor, lower.panel=panel.smooth)
   pairs(natura2000~log(area)+log(pop)+log(GDPcap)+log(tour)+log(unemp), data=s.df, upper.panel = panel.cor, lower.panel=panel.smooth)
